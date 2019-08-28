@@ -26,7 +26,7 @@ var interfaceConfig = {
     SHOW_POWERED_BY: false,
     SHOW_DEEP_LINKING_IMAGE: false,
     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
-    DISPLAY_WELCOME_PAGE_CONTENT: true,
+    DISPLAY_WELCOME_PAGE_CONTENT: false,
     APP_NAME: 'Jitsi Meet',
     NATIVE_APP_NAME: 'Jitsi Meet',
     PROVIDER_NAME: 'Jitsi',
@@ -45,12 +45,18 @@ var interfaceConfig = {
      * enabled. Also, the "profile" button will not display for user's with a
      * jwt.
      */
+    // TOOLBAR_BUTTONS: [
+    //     'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+    //     'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
+    //     'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
+    //     'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+    //     'tileview', 'videobackgroundblur' 
+    // ],
     TOOLBAR_BUTTONS: [
-        'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
-        'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
-        'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
-        'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
-        'tileview', 'videobackgroundblur'
+        'microphone', 'camera', 'fullscreen',
+        'fodeviceselection', 'hangup', 'recording',
+        'videoquality', 'filmstrip',
+        'tileview', 'videobackgroundblur' 
     ],
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],

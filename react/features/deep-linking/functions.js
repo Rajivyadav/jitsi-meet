@@ -56,7 +56,7 @@ export function getDeepLinkingPage(state) {
     }
 
     const OS = Platform.OS;
-    const isUsingMobileBrowser = OS === 'android' || OS === 'ios';
+    const isUsingMobileBrowser = false;//OS === 'android' || OS === 'ios';
 
     if (isUsingMobileBrowser) { // mobile
         const mobileAppPromo
